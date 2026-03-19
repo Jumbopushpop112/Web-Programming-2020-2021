@@ -1,0 +1,35 @@
+/* Style sheet for Mini Linsk and Images Assignmentsd
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 11, 2021, 2:10:31 PM
+    Author     : 1101923
+*/
+body {
+    background-color: lightblue;  
+}
+
+.p {
+    display:grid; 
+}
+
+a:link {
+    background-color: red;  
+}
+
+a:visited {
+    color: blue;  
+}
+
+a:hover {
+    background: url("Images/Ship.jpg");
+    color: lime;
+}
+
+a:active {
+    color: purple;   
+}
+
+

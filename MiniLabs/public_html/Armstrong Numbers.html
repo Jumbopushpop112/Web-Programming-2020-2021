@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Armstrong Numbers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            //JavaScript code that uses the substr() method to abstract the characters. The sum is being checked to see if it is equal to the iterator. If so, we console.log it. We also raise it using Math.pow()
+            var sum = 0;
+            var firstnum = 0;
+            var secondnum = 0;
+            var thirdnum = 0;
+            var countstring = ""; 
+            for(var i = 100; i< 1000; i++)
+            {
+                countstring = i.toString(); 
+                firstnum = parseInt(countstring.substr(0,1)); 
+                secondnum = parseInt(countstring.substr(1,1));
+                thirdnum = parseInt(countstring.substr(2,1));    
+                sum = Math.pow(firstnum, 3) + Math.pow(secondnum, 3) + Math.pow(thirdnum, 3);
+              if(sum === i)
+              {
+                console.log("Armstrong number is:");
+                console.log(sum);      
+              }
+            }
+            for(var i = 1000; i < 9999; i++)  
+            {
+                countstring = i.toString(); 
+                firstnum = parseInt(countstring.substr(0,1));
+                secondnum = parseInt(countstring.substr(1,1));
+                thirdnum = parseInt(countstring.substr(2,1));    
+             if(countstring.length > 3)
+              { 
+                fourthnum = parseInt(countstring.substr(3,1));
+                sum = Math.pow(firstnum, 4) + Math.pow(secondnum, 4) + Math.pow(thirdnum, 4) + Math.pow(fourthnum, 4); 
+               }
+            if(sum === i)
+            {
+                console.log("Armstrong number is:");
+                console.log(sum);       
+            }
+           } 
+        </script>
+    </body>
+</html>

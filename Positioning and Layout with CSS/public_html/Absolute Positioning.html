@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Absolute Positioning</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS code that positions the attributes on the screen. This affects how they will be displayed. Other attributes are set accordingly. */
+            div.page{ 
+                position: absolute; 
+                width: 25%;  
+                left: 50px; 
+                top: 100px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #000000; 
+            }
+            p {    
+                bottom: 2px; 
+                border-width: 2px;
+                border: solid;
+                background-color: #FFFFFF; 
+            }
+            p.two {
+               position: relative; 
+               left: 50px; 
+               top: -100px;  
+               bottom: 2px; 
+               border-width: 2px;
+               border: solid;
+            } 
+        </style>
+    </head>
+    <body> 
+        <!--HTML code that uses the div tag. This divides it up. The class attribute gets the CSS code accordingly. -->
+        <div class="page">  
+            <p>Here is paragraph <b>one</b>. This will be at the top of the page.</p> 
+            <p class="two">Here is paragraph <b>two</b>. This will be in the middle page.</p> 
+            <p>Here is paragraph <b>three</b>. This will be at the bottom of the page.</p> 
+       </div>   
+    </body>
+</html>

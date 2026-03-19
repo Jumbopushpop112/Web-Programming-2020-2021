@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Clear Property</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS code, the clear property moves the box to the right. This allows the p boxes to move to right.  */
+            body {
+                color: #000000;
+                background-color: #ffffff;
+                font-size: 12px;
+                margin: 10px;
+                width: 518px;
+                border: 1px solid #000000;
+            }
+            .p {
+                background-color: #FFFFFF;
+                border: 2px solid #000000;
+                padding: 5px;
+                margin: 5px;
+                width: 500px;
+                clear: right;
+            }
+            .pullQuote{
+                float:right;
+                width: 150px;
+                border: solid 2px; 
+                
+            }
+        </style>
+    </head>
+    <body>
+        <!--HTML block. Aside tag moves the item to the side a bit. Getting the classes, the lines are styled accordingly. -->
+        <h1>Heading</h1>
+         <aside class="pullQuote">Here is the pullquote. It will be removed from
+         normal flow and appear on the right of the page.</aside>
+        <p class="p">This is where the story starts and it will appear at the top of the
+        page under the heading. You can think of it as the first paragraph of an
+        article or story. In this example, the pull quote gets moved across the to the
+        right of the page. There will be another paragraph underneath.</p>
+        <p class="p">Here is another paragraph. This one will be at the bottom of the page.</p>
+    </body>
+</html>

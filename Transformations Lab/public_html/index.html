@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Transformations Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS that styles the site. Using pseudo classes, we can make the according changes when the mouse is hovered over.*/
+            #all{
+              background: #FFFFFF url(Images/octopus.png) no-repeat right bottom;
+              background-size: contain;
+            }
+            li{
+                font-size: 20px;
+                list-style-type: disc;
+            }
+            .li{
+               list-style-type: circle; 
+            }
+            footer{
+                color: white;
+                text-align: center;
+                float: bottom;
+                background: #717B32 url(footer-gradient.png) repeat-x 0px -25px;
+                clear: both;
+                transform: translate(0.6px, -16px);
+            }
+            #greenWindow{
+                border: 2px solid #CCC;
+                border-radius: 25px;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                background-color: rgba(198,207,146,0.8);
+                width: 67%;
+                margin-top: 10px;
+                height: 300px;
+                transform: translate(49%,-180%);
+            }
+            #FISH_1{
+                background-image: url("Images/fish1.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:200px;
+                height:160px;
+                margin-left: 30px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                background-color: #FFFFFF;
+                text-align: center;
+                font-size: 24px;   
+                font-weight: bold;
+                float: left;
+            }
+            #FISH_2{
+                background-image: url("Images/fish2.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:200px;
+                height:160px;
+                margin-left: 30px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                background-color: #FFFFFF;
+                text-align: center;
+                font-size: 24px;  
+                font-weight: bold;
+                float: left;
+            }
+            #FISH_3{
+                background-image: url("Images/fish3.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:200px;
+                height:160px;
+                margin-left: 30px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                background-color: #FFFFFF;
+                text-align: center;
+                font-size: 24px;  
+                font-weight: bold;
+                float: left;
+            }
+            #FISH_4{
+                background-image: url("Images/fish4.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:200px;
+                height:160px;
+                margin-left: 30px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                background-color: #FFFFFF;
+                text-align: center;
+                font-size: 24px;  
+                font-weight: bold; 
+                float: left;
+            }
+            .translate{
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:200px;
+                height:160px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                background-color: #FFFFFF;
+                text-align: center;
+                font-size: 24px;   
+                font-weight: bold;  
+            }
+            .fishie{
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:200px;
+                height:160px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                background-color: #FFFFFF;
+                text-align: center;
+                font-size: 24px;   
+                font-weight: bold; 
+            }
+            #FISH_1:hover{
+                transform: translate(50px,100px);
+            } 
+            #FISH_2:hover{
+                transform: rotate(20deg); 
+            }
+            #FISH_3:hover{
+                transform: scale(2,3) 
+            }
+            #FISH_4:hover{
+                transform: skew(20deg);
+            }
+        </style>
+    </head>
+    <body>
+        <!--HTML code that will present the image on the screen. Positioned using the CSS styling code using class and ID -->
+        <p>Creatures that Live Around and Under the Ocean are...</p>
+        <h1>Aquamaniacs</h1>
+        <div id="all">
+        <ul>
+            <li><a href="#">Home</a>
+            <li><a href="#">Big Critters</a>
+               <ul>
+                   <li class="li"><a href="#">Whales</a></li>
+                   <li class="li"><a href="#">Dolphins</a></li>
+                   <li class="li"><a href="#">Sharks</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Oddballs</a>
+              <ul>
+                  <li class="li"><a href="#">Emperor Penguin</a></li>
+                  <li class="li"><a href="#">Lobster</a></li>
+                  <li class="li"><a href="#">Lionfish</a></li>
+                  <li class="li"><a href="#">Cuttlefish</a></li>
+                  <li class="li"><a href="#">Seahorse</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Multimedia</a>
+              <ul>
+                  <li class="li"><a href="#">Groovy Fish</a></li>
+                  <li class="li"><a href="#">Watery Pics</a></li>
+                  <li class="li"><a href="#">Aquarium</a></li>
+                  <li class="li"><a href="#">Sound Bites</a></li>
+                  <li class="li"><a href="#">Octopus Videos</a></li> 
+              </ul>
+            </li>
+            <li><a href="#">Animations</a>
+              <ul>
+                  <li class="li"><a href="#">Octopus Animations</a></li> 
+                  <li class="li"><a href="#">Otters</a></li>
+                  <li class="li"><a href="#">Funny Fish 1</a></li>
+                  <li class="li"><a href="#">Funny Fish 2</a></li>
+              </ul>
+            </li>
+        </ul>
+        </div>
+        <footer>&copy 2013. CompuScholar, Inc. All Rights Reserved</footer>
+        <div id="greenWindow">
+            <h1>Funny Fish</h1>
+            <div id="FISH_1" class="fishie">Translate</div>
+            <div id="FISH_2" class="fishie">Rotate</div>
+            <div id="FISH_3" class="fishie">Scale</div>
+            <div id="FISH_4" class="fishie">Skew</div>
+        </div>
+    </body>
+</html>

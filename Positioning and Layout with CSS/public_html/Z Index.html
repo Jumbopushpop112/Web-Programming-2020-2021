@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Z Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS code that uses the Z index, which displays what item comes on the top of the other. All other attributes are set accordingly. */
+            p{
+              width: 200px;
+              background-color: #ffffff;
+              margin: 10px;
+              border-style: solid;
+              border-color: #000000;
+              border-width: 2px;
+            }
+            p.one {
+                z-index: 3;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            p.two 
+            {
+               z-index: 1;
+               position: absolute;
+               left: 150px;
+               top: 35px;
+            }
+            p.three {
+                z-index: 2;
+                position: absolute;
+                left: 40px;
+                top: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Basic HTML code that gets the CSS styling accordingly. -->
+        <p class="one">Here is a paragraph <b>one</b>
+           This will be at the top of the page.</p>
+        <p class="two">Here is a paragraph <b>two</b>
+           This will be underneath the other elements.</p>
+        <p class="three">Here is a paragraph <b>three</b>.
+           This will be at the bottom of the page.</p>
+    </body>
+</html>

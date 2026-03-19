@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Note to Self</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: lightgray;    
+            } 
+            .sticky1{ 
+                margin-top: 10px; 
+                margin-right: 25px;       
+                width: 250px;     
+                padding-bottom: 15%;   
+                float: left; 
+                text-align: left; 
+                font-size: 30px; 
+                
+            }
+             .sticky2{
+                margin-top: 15px; 
+                margin-right: 10px;      
+                width: 250px;    
+                padding-bottom: 15%;   
+                float: left; 
+                text-align: left;  
+                font-size: 30px; 
+                transform: rotate(-2.4deg); 
+            }
+            ul{
+                list-style-type: none; 
+            }
+            .sticky1:hover{
+                transform: rotate(5deg) scale(1.2);    
+            } 
+             .sticky2:hover{
+                transform: rotate(5deg) scale(1.2);         
+            } 
+        </style>
+         <link rel="icon" href="Images/note.png" type="image/gif" sizes="16x16">     
+    </head>
+    <body onload="init()">    
+        <!--HTML hosting options that allow the user to pick the color -->
+        <form>
+            <label for="note_color">Color: </label> 
+            <select id="note_color">
+                <option value="Yellow">Yellow</option>  
+                <option value="LightGreen">Green</option> 
+                <option value="Pink">Pink</option>
+                <option value="LightBlue">Blue</option>  
+            </select>
+            <label for="note_text">Text:</label>
+            <input type="text" id="note_text">
+            <input type="button" id="add_button" value="Add Sticky Note to Self">
+        </form>
+        <ul id="stickies">          
+        </ul> 
+        <script src="JavaScript/Sticky.js"></script> 
+    </body>
+</html>

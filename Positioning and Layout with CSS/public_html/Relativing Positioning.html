@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Relative Positioning Exercise</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS code that positions the items with relative positioning. All other attributes are set accordingly. */
+             p {   
+                width: 15%; 
+                bottom: 2px; 
+                border-width: 2px;
+                border: solid;
+                background-color: #FFFFFF; 
+            }
+            p.two { 
+                position: relative;
+                left: 40px; 
+                top: -40px;
+                width: 15%; 
+                bottom: 2px; 
+                border-width: 2px;
+                border: solid;
+            }
+        </style>
+    </head>
+    <!--CSS code that gets the attributes using the class. -->
+    <body>
+        <p>Here is paragraph <b>one</b>. This will be at the top of the page.</p> 
+        <p class="two">Here is paragraph <b>two</b>. This will be in the middle page.</p> 
+        <p>Here is paragraph <b>three</b>. This will be at the bottom of the page.</p> 
+    </body>
+</html>

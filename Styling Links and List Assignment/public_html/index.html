@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Styling Links and List Exercise</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS code that styles the website accordingly. When the user hovers, the text color and background color change. All other attributes are set accordingly. */
+            body{
+                font-family: sans-serif;
+            }
+            .li{   
+                list-style-type: square;  
+            }
+            ul{
+                background-color: darkgray;
+                width: 30%;
+            }
+            a:hover{
+               color: navy;
+               background-color: lightgray;   
+           }
+            li{
+                list-style-type: circle;
+            }
+            a{
+                color: blue;
+            }
+            a:link{
+                text-decoration: none;
+            }
+            h4 span:hover{
+                background-color:lightgray;
+                color: navy;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <!--HTML code that includes a nested list, and sets a circle and a square before the elements. Using the id, we can allow the user to click and go to that topic. -->
+        <h1>Styling Links and List</h1>
+        <ul>
+            <li>
+                <b>Properties</b>
+                <ul>
+                    <li class="li"><a href="#background">Background Properties</a></li>
+                    <li class="li"><a href="#outline">Outline Properties</a></li>
+                    <li class="li"><a href="#link">Link Properties</a></li>
+                    <li class="li"><a href="#table">Table Properties</a></li>
+                </ul>
+            </li> 
+            <li>
+                <b>Generating Content</b>
+                <ul>
+                    <li class="li"><a href="#before">:before Pseudo-Element</a></li>
+                    <li class="li"><a href="#after">:after Pseudo-Element</a></li>
+                </ul>
+            </li>
+            <li>
+                <b>Positioning</b>
+                <ul>
+                    <li class="li"><a href="#normal">Normal Flow</a></li>
+                    <li class="li"><a href="#absolute">Absolute Positioning</a></li>
+                    <li class="li"><a href="#floating">Floating Positioning</a></li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Properties</h2> 
+        <h4 id="background"><span>Background Properties</span></h4>
+        <h4 id="outline"><span>Outline Properties</span></h4>
+        <h4 id="link"><span>Link Properties</span></h4>
+        <h4 id="table"><span>Table Properties</span></h4>
+        <h2>Generating Content</h2>
+        <h4 id="before"><span>:before Pseudo-Element<span></h4>
+        <h4 id="after"><span>:after Pseudo-Element<span></h4>
+        <h2>Positioning</h2>
+        <h4 id="normal"><span>Normal Flow</span></h4>
+        <h4 id="absolute"><span>Absolute Positioning</span></h4>
+        <h4 id="floating"><span>Floating Positioning</span></h4>
+    </body>
+</html>

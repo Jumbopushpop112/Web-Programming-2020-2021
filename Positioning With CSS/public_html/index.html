@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Positioning using CSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS style tags. Using the z index, we can determine where the items will go on top of each other. Using the left we can position it accordingly. All other attributes are set accordingly.*/
+            li{
+                text-decoration: underline; 
+                color: purple;
+                list-style-type: disk;
+                font-size: 20px;
+            }
+            div{
+                border-style: inset;
+                width: 450px; 
+                border: solid;
+                border-color: grey;
+                background-color: lightgray;
+            }
+            h3{
+               font-size: 30px; 
+            }
+            #div1{
+                z-index: 1;
+            }
+            #div2{
+                position: relative;
+                z-index: 3;
+                margin-top: -4%;
+                left: 7%;
+            }
+            #div3{
+                position: relative;
+                z-index: 2;
+                left: 18%;
+                margin-top: -2%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--HTML code that displays accordingly. We are able to access the style tags using the id tag. -->
+        <h1>Positioning using CSS</h1>
+        <div id="div1"><h3>Properties</h3> 
+        <ul>
+            <li>Background Properties</li>
+            <li>Outline Properties</li>
+            <li>Link Properties</li>
+            <li>List Properties</li>
+            <li>Table Properties</li>
+        </ul></div>
+        <div id="div2"><h3>Generating Content</h3>
+        <ul>
+            <li>:before Pseudo Element</li>  
+            <li>:after Pseudo Element</li>
+        </ul>
+        </div>
+        <div id="div3"><h3>Positioning</h3>
+        <ul>
+            <li>Normal Flow</li>  
+            <li>Absolute Positioning</li>
+            <li>Floating Positioning</li>
+        </ul>
+        </div>
+    </body>
+</html>
