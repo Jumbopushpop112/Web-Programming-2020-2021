@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Evans Ch 7 Challenge</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS bodies that sent the font, margins and other dimensions to specifics. # elements are called using id and . elements are called with class */
+            body {
+                background-color: lightblue; 
+                font-size:12px;
+            }
+            h2 {
+                text-align:center;
+                border:solid;
+                background-color:white;
+            }
+            #directions {  
+                border:dashed;
+                background-color:white; 
+                text-align:center;  
+                margin-right: 20%;    
+                margin-left: 20%;  
+            }
+            #F {
+                font-size:40px; 
+                color:orange;
+                font-family: Georgia;  
+            }
+            p {
+                text-align: center; 
+            }
+            tr {
+                border-style: solid;
+                border-color:blue; 
+                background-color:grey;
+                /*margin:25px 50px 75px 100px; */ 
+                text-align:center;  
+            }
+            #td1 {
+               border-style: solid;
+               border-color:blue; 
+               margin:100px; 
+               background-color:lightgrey; 
+            }
+            #comic {
+                font-family: "Comic Sans MS", "Comic Sans", cursive;     
+                border-style:solid;
+                border-color:blue; 
+                background-color:lightgrey;       
+            }
+            #tnr {
+                font-family: "Times New Roman", Times, serif;         
+                border-style:solid;
+                border-color:blue; 
+                background-color:lightgrey;    
+                margin:100px; 
+            }
+            #arial {
+                font-family: arial;      
+                border-style:solid;
+                border-color:blue; 
+                background-color:lightgrey;  
+                margin:100px; 
+            }
+            #monospace {
+                font-family: monospace;       
+                border-style:solid;
+                border-color:blue; 
+                background-color:lightgrey; 
+                margin:100px;
+            }
+            caption {  
+                border-style:solid; 
+                border-color: blue;
+                background-color:grey;  
+                text-align: center;    
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;    
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--HTML code used to render site. Table, caption, paragraphs and headers. CSS is used to determine how the stuff appears on the webpage. We can use id and class for that. We can access the specifications that way. -->
+        <h2>This is your stylish website!</h2> 
+        <p id = "directions">In order to successfully make this, you're gonna need to use css, the span element, and the id <br>   
+            attribute."<br> <br>
+            The whole site should be font size 12 and the use the Georgia Font.<br> 
+            
+             <span id="F">F</span>irst, make a large, orange F   
+        </p> 
+        <p class ="P2">Then make a table</p> 
+        <p class="P2">Applying a caption and two table headers for each row</p>  
+        <table>
+            <caption class="caption"><strong>Examples of Common Font Families</strong></caption>     
+            <tr>
+                <th id="td1">Font Name</th>   
+                <td id="td1">Comic Sans</td>  
+                <td id="td1">Times New Roman</td> 
+                <td id="td1">Arial</td>
+                <td id="td1">Courier New</td> 
+            </tr> 
+            <tr>
+                <th id="td1">Example</th>  
+                <td id="comic">A very fun font!</td>
+                <td id="tnr">A more serious font</td>      
+                <td id="arial">A very basic font</td> 
+                <td id="monospace">A monospace font</td>  
+            </tr>
+        </table> 
+         
+    </body>
+</html>

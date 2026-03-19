@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Drawing Rectangles with a loop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #myCanvas{
+                border: solid 1px black; 
+            }   
+        </style>
+    </head>
+    <body>
+        <canvas id= "myCanvas" height="360" width="360">Your browser does not support canvas API</canvas>
+        <script>
+           window.onload = drawRects;
+           
+           function drawRects()
+           {
+             var colors = ["#999999", "#333333","#999999", "#333333", "#999999", "#333333"];
+             //get canvas element from the DOM
+             var theCanvas = document.getElementById("myCanvas");
+             //checking if canvas API is supported
+             if (theCanvas.getContext) 
+             {
+                 var ctx = theCanvas.getContext("2d"); 
+                 //draw some rectangles
+                 //I used https://www.w3schools.com/tags/canvas_rect.asp
+                 for (var x = 20, y=20, count = 0; count<6; count++, x+=40, y+=40)
+                 {
+                    ctx.fillStyle = colors[count];
+                    ctx.beginPath();
+                    //first two values are the x and y coordinates, second two values are the width and height
+                    ctx.fillRect(x,y,100,100);   
+                 }
+             }
+             else
+                alert("canvas not supported, update your browswer slacker!");
+           }
+        </script>    
+    </body>
+</html>

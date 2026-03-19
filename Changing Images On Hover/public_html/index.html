@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head> 
+        <title>On Mouse Over and On Mouse Out</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #images{
+                display:grid;
+                grid-template-columns:30% 30% 30%; 
+                grid-column-gap:10px;
+                grid-row-gap: 10px;
+                justify-content: center; 
+            }
+            img{
+                width:90%; 
+            }
+            p{
+                text-align: center; 
+            }
+        </style>
+    </head>
+    <body onload="init()"> 
+        <!--HTML form that holds the images and sets the id for each image.--> 
+        <p>My Images</p>
+        <section id="images">
+          <img id="0">  
+          <img id="1"><br>   
+          <img id="2"> 
+          <img id="3"><br>  
+          <img id="4">  
+          <img id="5">      
+        </section>   
+        <script src="JavaScript/setTimeOut.js"></script>       
+    </body> 
+</html>
+ 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Basic JavaScript Concepts</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Basic JS Exercises involving Conditionals, loops, Mod etc.</div>
+        
+        <script>
+            var arrayStudentNames = ["David", "Vinoth", "Divys", "Tshitha", "Thomas"];
+            var arrayStudentGrades = [80,77,88,95,68];
+            var average = 0.0;
+            var sum = 0;
+            
+            //lets create a for loop and walk through the array and print their
+            //contents to the html file using document.write()
+            //ALSO ADDED UP ALL THE NUMBERS IN THE ARRAY
+            document.write("Grades summed were: ");
+            for(var i =0; i< arrayStudentGrades.length; i++)
+            {
+               sum = sum + arrayStudentGrades[i];
+               //write the current grade
+               document.write(arrayStudentGrades[i] + '&nbsp;'); 
+            }
+            average = sum/arrayStudentGrades.length; 
+            document.write("<br /> With a sum of " + sum + "<br /> The average of all grades is " + average);
+            
+            //Show each student and their respective letter grade
+            for(var i=0; i<arrayStudentGrades.length; i++)
+            {
+               document.write("<br />"+arrayStudentNames[i] +"&nbsp;" + arrayStudentGrades[i]+ "&nbsp;");
+               if (arrayStudentGrades[i]>=90)
+                 document.write("A");
+               else if (arrayStudentGrades[i]>=80)
+                 document.write("B");
+               else if (arrayStudentGrades[i]>=70)
+                 document.write("C");
+               else if (arrayStudentGrades[i]>=60)
+                 document.write("D");  
+               else
+                 document.write("F");     
+            }
+            var count = 1;
+            while (count <= 20)
+            {
+                //check if a number is even if so output it to the console
+                if(count % 5 === 0 && count % 4 ===0)  
+                //% is for division
+                  console.log(count + " is a multiple of 5 and 4");  
+                count++; //count += 1 and count = count + 1. All increment count by 1.
+            }
+            var num = 3;
+            console.log(num + " squared is: " + Math.pow(num, 2));
+            console.log(num + " cubed is: " + Math.pow(num, 3));
+            console.log("The square root of 9 is: " + Math.sqrt(9));
+            
+            window.alert();
+            window.prompt("Enter a number");
+            
+            usersNumber = parseInt(window.prompt("Enter a number:")); 
+            usersRespone = window.confirm("Are you sure you don't like spiders and snakes");
+        </script>
+    </body>
+</html>
