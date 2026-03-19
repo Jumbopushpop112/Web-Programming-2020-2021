@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Midterm Practice Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #clock{
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto;  
+            }
+        </style>
+    </head>
+    <body>
+        <label for="firstnumber">Enter first decimal number</label>
+        <input type="number" id="firstnumber"><br><br>
+        
+        <label for="secondnumber">Enter second decimal number</label>
+        <input type="number" id="secondnumber"><br><br> 
+         
+        <button type="button" onClick="calculateNum()">Click here to add the numbers</button><br><br>
+        <label for="resultingArea">Sum of the two decimal numbers rounded to two places is:</label>
+        <input type="text" id="resultingValue" name="resultingArea"><br>
+        <img src="Images/Clock.jpg" id="clock"> 
+        <script>
+             function calculateNum(){   
+                 var num1 = document.getElementById("firstnumber").value;
+                 var num2 = document.getElementById("secondnumber").value;
+                 num1 = parseFloat(num1); 
+                 num2 = parseFloat(num2);
+                 var n1 = num1.toFixed(2);
+                 var n2 = num2.toFixed(2); 
+                 n1 = parseFloat(n1);
+                 n2 = parseFloat(n2);
+                 var n = n1 + n2;
+                 var answer = n.toFixed(2);
+                 document.getElementById("resultingValue").value = answer;
+             } 
+        </script>
+    </body>
+</html>

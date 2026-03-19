@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Perimeter of Trapezoid</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="init()"> 
+        <!--HTML form to get the perimeter of a trapezoid -->
+        <h1>Enter Base 1 and Base 2 to calculate perimeter of trapezoid</h1>
+        <form action="AreaPage.php" method="get">
+           <label for="base1">Enter Base 1:</label>
+           <input type="text" id="base1" name="fbase"><br><br>
+           <label for="base2">Enter Base 2:</label>
+           <input type="text" id="base2" name="sbase"><br><br> 
+           <label for="side1">Enter Side 1:</label>
+           <input type="text" id="side1" name="side1"><br><br>
+            <label for="side2">Enter Side 2:</label>
+           <input type="text" id="side2" name="side2"><br><br>
+           <button type="button" name="calculatePerimeter" id="calculatePerimeter">Click to calculate perimeter</button><br><br>
+           <label for="resultingPerimeter">Perimeter of the trapezoid is</label>
+           <input type="text" id="resultingPerimeter" name="resultingPerimeter">
+           <script src="JavaScript/PerimeterTrapezoid.js"></script>
+        </form>
+    </body>
+</html>

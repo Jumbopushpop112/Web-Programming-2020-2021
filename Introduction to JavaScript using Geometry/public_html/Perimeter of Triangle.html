@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Perimeter of Triangle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="init()"> 
+         <h1>Enter 2 sides and the base to calculate perimeter of triangle</h1>
+        <form>
+            <!--HTML form to get the perimeter of the triangle -->
+           <label for="side1">Enter 1st side:</label> 
+           <input type="text" id="side1" name="fside"><br><br>
+           <label for="height">Enter 2nd side:</label>
+           <input type="text" id="side2" name="sside"><br><br>
+           <label for="side3">Enter the base</label>
+           <input type="text" id="base" name="tside"><br><br> 
+           <button type="button" name="calculatePerimeter" id="calculatePerimeter">Click to calculate perimeter</button><br><br>
+           <label for="resultingPerimeter">Perimeter of the triangle is</label>
+           <input type="text" id="resultingPerimeter" name="resultingPerimeter">
+           <script src="JavaScript/PerimeterTriangle.js"></script>
+        </form>
+    </body>
+</html>

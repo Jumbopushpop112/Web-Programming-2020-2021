@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+            /*CSS code that center aligns the items. The label items are displayed to the left 5 pixels. The elements with the id container will receive according values. */
+            #container{
+                /*Center Display*/
+                display: grid;
+                grid-template-columns:5% 20%; 
+                grid-column-gap: 5px;
+                grid-row-gap: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: left; /*Justify anything is along the x-axis */
+                border: solid 1px graytext;
+                padding-bottom: 10px;
+                align-items: center;
+            }   
+            label{ 
+                margin-left: 5px; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Fill out the form if you enjoyed your haircut, we love hearing from our customers!</h1>
+        <form action="someFileName.aspx" method="post">
+             <section id="container">
+                <label for="emailUsers">Date of Haircut</label> 
+                <input id="emailUsers" type="text" name="email" size="15" maxlength="15" required placeholder="Enter Date of Cut">
+
+                <label for="email">Name</label>
+                <input id="email" type="text" name="email" size="15" maxlength="15" required placeholder="Enter Name">
+                
+                <label>Comments</label> 
+                <textarea name="txtComments" rows="20" cols="50" placeholder="Leave your comments!"></textarea>
+            </section> 
+            <h1>Don't forget to review us on Google!</h1>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gradients Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             #all{
+              background: #FFFFFF url(Images/octopus.png) no-repeat right bottom;
+              background-size: contain;
+            }
+            h3{
+                color: olive;
+            }
+            li{
+                font-size: 20px;
+                list-style-type: disc;
+            }
+            .li{
+               list-style-type: circle;  
+            }
+            footer{
+                color: white;
+                text-align: center;
+                float: bottom;
+                background: #717B32 url(footer-gradient.png) repeat-x 0px -25px;
+                clear: both;
+                transform: translate(0.6px, -16px);
+            }
+            #greenWindow{
+                border: 2px solid #CCC;
+                border-radius: 25px;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                background-color: rgba(198,207,146,0.8);
+                width: 75%;
+                margin-top: 10px;
+                height: 350px;
+                transform: translate(29%,-170%);
+            }
+            p{
+                margin-left: 20px;
+                font-family: mySecondFont;
+            }
+            @font-face{
+                font-family: mySecondFont;
+                src: url(Fonts/ArchitectsDaughter-webfont.ttf)
+            }
+            h1{
+                font-family: myFirstFont;
+                margin-left: 20px;
+            }
+            @font-face{
+                font-family: myFirstFont;
+                src: url(Fonts/SigmarOne-webfont.ttf)
+            }
+        </style>
+    </head>
+    <body>
+         <p>Creatures that Live Around and Under the Ocean are...</p>
+        <h1>Aquamaniacs</h1>
+        <div id="all">
+        <ul>
+            <li><a href="#">Home</a>
+            <li><a href="#">Big Critters</a>
+               <ul>
+                   <li class="li"><a href="#">Whales</a></li>
+                   <li class="li"><a href="#">Dolphins</a></li>
+                   <li class="li"><a href="#">Sharks</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Oddballs</a>
+              <ul>
+                  <li class="li"><a href="#">Emperor Penguin</a></li>
+                  <li class="li"><a href="#">Lobster</a></li>
+                  <li class="li"><a href="#">Lionfish</a></li>
+                  <li class="li"><a href="#">Cuttlefish</a></li>
+                  <li class="li"><a href="#">Seahorse</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Multimedia</a>
+              <ul>
+                  <li class="li"><a href="#">Groovy Fish</a></li>
+                  <li class="li"><a href="#">Watery Pics</a></li>
+                  <li class="li"><a href="#">Aquarium</a></li>
+                  <li class="li"><a href="#">Sound Bites</a></li>
+                  <li class="li"><a href="#">Octopus Videos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Animations</a>
+              <ul>
+                  <li class="li"><a href="#">Octopus Animations</a></li> 
+                  <li class="li"><a href="#">Otters</a></li>
+                  <li class="li"><a href="#">Funny Fish 1</a></li>
+                  <li class="li"><a href="#">Funny Fish 2</a></li>
+              </ul>
+            </li>
+        </ul>
+        </div>
+        <footer>&copy 2013. CompuScholar, Inc. All Rights Reserved</footer>
+        <div id="greenWindow">
+            <h1>Welcome to Aquamaniacs</h1>
+            <p>This one</p>
+        </div>
+    </body>
+</html>

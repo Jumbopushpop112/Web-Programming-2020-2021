@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Diagonal Circles</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #myCanvas{
+                border: solid 1px black;
+            }   
+        </style>
+
+    </head>
+    <body>
+        <!--Create the canvas object. Show text if it is not supported. -->
+         <canvas id= "myCanvas" height="360" width="360">Your browser does not support canvas API</canvas>
+         <script>
+           window.onload = drawCircles;
+           
+           function drawCircles() 
+           {
+             //array of colors to fill, and we use a for loop to fill our canvas.
+             var colors = ["#f2f2f2", "#e6e6e6","#bfbfbf", "#8c8c8c", "#595959", "#000000"];
+             //get canvas element from the DOM
+             var theCanvas = document.getElementById("myCanvas");
+             //checking if canvas API is supported
+             if (theCanvas.getContext) 
+             {
+                 var ctx = theCanvas.getContext("2d"); 
+                 //draw some rectangles
+                 //I used https://www.w3schools.com/tags/canvas_rect.asp
+                 for (var x = 20, y=20, count = 0; count<6; count++, x+=60, y+=60)
+                 {
+                    ctx.fillStyle = colors[count];
+                    ctx.beginPath();
+                    //first two values are the x and y coordinates, second two values are the width and height
+                    ctx.arc(x, y, 20, 0, 2 * Math.PI);
+                    ctx.lineWidth = 3; 
+                    ctx.stroke();
+                    ctx.fill();
+                 }
+             }
+             else
+                alert("canvas not supported, update your browswer slacker!");
+           }
+        </script>    
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Area of a Circle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="init()">
+        <!--HTML form to calculate the area of circle. Using the script tag, we link the javascript code. -->
+        <h1>Enter radius of circle</h1>
+        <form>
+           <label for="radius">Enter radius:</label> 
+           <input type="number" id="radius" name="radius"><br><br>
+           <button type="button" name="calculateCircleArea" id="calculateCircleArea">Click to calculate area</button><br><br>
+           <label for="resultingArea">Area of the circle is</label>
+           <input type="text" id="circleArea" name="circleArea">
+           
+           <script src="JavaScript/AreaCircle.js"></script>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Happy Face</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #myCanvas{
+                 border: solid 1px black; 
+            }
+        </style>
+    </head>
+    <body>
+        <!--Create canvas item -->
+        <canvas id="myCanvas" width="220" height="220">Your browser does not support canvas API</canvas>
+        <script>
+             window.onload = drawSmiley;
+             //function that draws the arcs, and assigns coordinates
+             function drawSmiley(){
+             {    
+                var theCanvas = document.getElementById("myCanvas");
+                 if (theCanvas.getContext) 
+                 {
+                   var ctx = theCanvas.getContext("2d");  
+                   ctx.beginPath();
+                   ctx.arc(100, 100, 70, 0, 2 * Math.PI);
+                   ctx.stroke();
+                   
+                   ctx.beginPath();
+                   ctx.arc(100, 100, 40, 0, 1 * Math.PI);
+                   ctx.stroke();
+                   
+                   ctx.beginPath();
+                   ctx.arc(85, 80, 5, 0, 0.1, 2 * Math.PI );
+                   ctx.stroke();
+                   
+                   ctx.beginPath();
+                   ctx.arc(115, 80, 5, 0, 0.1, 2 * Math.PI ); 
+                   ctx.stroke();
+                   
+                   ctx.beginPath();
+                   ctx.moveTo(80,80);
+                   ctx.lineTo(120,80); 
+                   ctx.stroke();
+                 }
+             }
+         }  
+        </script>
+    </body>
+</html>

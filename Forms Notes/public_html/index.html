@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Form Practice!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="someFileName.aspx" method="get">
+            <!-- action attribute is the URL of the page on the web server that
+                 handles the request. The method attribute sets which of the two ways
+                 to send the form data to the server. 
+     
+                 Method attribute can take 2 values: "get" and "post" get is used
+                 when you want to send data to the server that is not sensitive.
+                 Post method is used to send sensitive data to the server. The form data
+                 is sent in the HTTP headers. But still using name=value pairs
+                 
+                 When setting method attribute to "get" your form data is sent to the server
+                 in name=value pairs in the URL.
+          
+                 The form element and all form controls will take on the name and ID
+                 attribute as well as the 2 attributes above. The form will have a name and an
+                 id, but not a value. Name attribute is used by the server side script, id
+                 attribute is used for styling. Get method is a default method.-->
+            <section>
+              <label for="txtPassword">Enter your password, not like I'm gonna steal it laughing out loud </label>
+              <input id="txtPassword" type="text" name="txtPassword" value="Enter your password" size="15" maxlength="5" required placeholder="dont enter your password"> 
+              <p><input type="submit" value="Submit" name="btnSubmit"></p>
+            </section>
+           <!--Multi-line text entry is via textarea tag -->
+           <fieldset id="comments">
+               <legend>Comments go here</legend>
+           <textarea name="txtComments" rows="20" cols="50">
+               Enter your comments here
+           </textarea>
+            
+           <!-- html5 input type for telephone -->
+           <p>
+             <label for="tellUsersPhone">Enter Phone Number </label>
+             <input id="tellUsersPhone" type="tel" name="tellUsersPhone" value="" size="20" maxlength="15" placeholder="What is your number?">
+           </p>
+           <p><label for="emailUsers">Enter your email so we can spam up your inbox</label>
+               <input type="email" id="emailUsers" name="emailUsers" value="" size="20" placeholder="Not a scam tho">
+           </p>
+           <!--Color swab -->
+           <p>
+               <label for="colorSwab">Choose a color</label>
+               <input type="color" id="colorSwab" name="colorSwab" value="" size="20">
+           </p>
+           
+           <!-- date input -->
+           <p>
+               <input type="date" id="dateReg" name="dateReg" value="" size="20">
+           </p> 
+           
+           <!-- reset button to clear all form form field --> 
+           <p>
+               <input type="reset"> 
+           </p>
+        </form>   
+    </body>
+</html>

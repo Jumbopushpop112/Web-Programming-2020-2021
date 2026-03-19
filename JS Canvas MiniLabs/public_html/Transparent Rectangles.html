@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Transparent Rectangles</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Declare our canvas to hold the items. -->
+        <canvas id="canvas"></canvas>
+        
+        <script>
+           var canvas = document.getElementById("canvas");
+           //create first rectangle, set the fill to red and set the coordinates.
+           var rectangle1 = canvas.getContext("2d"); 
+           rectangle1.fillStyle = "red";
+           rectangle1.fillRect(0,0,80,75);
+           //create second rectangle, set the fill to blue and set the coordinates, along with the transparency.
+           var rectangle2 = canvas.getContext("2d");
+           rectangle2.globalAlpha = 0.6; 
+           rectangle2.fillStyle = "blue";
+           rectangle2.fillRect(20,40,80,75);  
+        </script>
+    </body>
+</html>

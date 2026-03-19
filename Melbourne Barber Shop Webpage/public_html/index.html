@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Melbourne Barber Shop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="BarberCSS.css">
+        <link rel="shortcut icon" href="Pictures/favicon.ico" type="image/x-icon">  
+<style>
+            /*MAIN*/
+body {
+   background-color: maroon; 
+} 
+#barberLogo { 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 10%; 
+}
+#welcomeVideo { 
+    width: 100%;
+    /*object-fit: fill;*/
+}
+#introductoryDiv{
+    float: left; 
+}
+.sidenav{
+  height: 100%;
+  width: 200px; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-color: #636362;
+}
+.sidenav a{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color: lightcoral;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+a:hover{
+  color: white;
+}
+.melbourneshop{ 
+    text-align: center;  
+    font-size: 25px; 
+    font-family: 'arial';
+    color: white;  
+}
+h1{
+    text-align: center;
+    font-size: 90px; 
+}
+h3{
+    font-size: 30px;   
+}
+li{
+    font-size: 30px;
+}
+#about{
+   color: white;
+   font-family: cursive;
+   font-size: 40px;
+   margin-left: 42%;
+
+}
+#abouts{
+   color: white;
+   font-family: cursive;
+   font-size: 20px;
+   margin-left: 14%;
+   word-wrap: break-word
+
+}
+#book{
+   color: black; 
+   font-family: cursive;
+   width: 25%;
+   margin-left: 40%;
+   font-size: 30px; 
+   background-color: lightgrey;
+   width: 20%;
+   border-radius: 45px; 
+   height: 35%;
+   padding: 0.3em 1.2em;
+   border: 0.16em solid rgba(255,255,255,0);
+   border-radius: 2em;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-weight: 300;
+   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+   text-align: center;  
+}
+#mute{
+  color: white;
+   font-family: cursive;
+   font-size: 20px;
+   margin-left: 3%;
+   background-color: red;
+   width: 95%;
+   border-radius: 45px; 
+   height: 5%;
+   padding: 0.3em 1.2em;
+   border: 0.16em solid rgba(255,255,255,0);
+   border-radius: 2em;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-weight: 300;
+   color: #FFFFFF;
+   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+   text-align: center;   
+}
+#book:hover{
+  color: red;
+  width: 45%;
+  margin-left: 37%;
+  font-size: 40px; 
+}
+.walkIn{
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    color: white;   
+}
+#services{
+    margin-left: 40%;
+    font-size: 50px;
+    color: white;
+    list-style-type: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Tahoma, sans-serif; 
+}
+#dressing{
+    margin-left: 25%;
+    list-style-type: none;
+    display: inline-block;
+}
+#coloring{
+    margin-left: 0.5%;
+    list-style-type: none; 
+    display: inline-block;
+}
+#shaving{
+    margin-left: 1%;
+    list-style-type: none;
+    display: inline-block;
+}
+#classic{
+    margin-left: 25%;
+    list-style-type: none;
+    padding-top: 1%;
+    display: inline-block;
+}
+#facial{
+    margin-left: 0.9%;
+    list-style-type: none;
+    padding-top: 1%; 
+    display: inline-block;
+}
+#hairdressing{
+   margin-left: 1%;
+   list-style-type: none;
+   padding-top: 1%; 
+   display: inline-block;  
+} 
+#pricingDiv{
+    color: white; 
+}
+#mensPricing {
+    list-style-type: none;
+}
+#mensList {
+    display: inline-block;
+}
+#mensPricing {
+    display: inline-block;
+}
+#womensPricing {
+    list-style-type: none;
+}
+#womensList {
+    display: inline-block;
+}
+#womensPricing {
+    display: inline-block; 
+}
+#mensDiv {
+    margin-left: 19%;
+    display: inline-block;
+}
+#womensDiv {
+    margin-left: 11%;
+    display: inline-block;  
+} 
+#circle {
+  height: 300px;
+  width: 300px;
+  background-color: yellow;
+  border-radius: 50%;
+  align-content: center;
+  transform: translate(1130px, -835px); 
+}
+#offers{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    transform: translate(0px, 85px);
+}
+#employment{
+    font-size: 50px; 
+    margin-left: 20%;
+    color: white;
+}
+#title{
+    margin-left: 25%;
+    color: white;
+}
+#hours{
+    transform: translate(350px, -175px);
+}
+#starting{
+    margin-left: -25%; 
+} 
+</style>
+<link rel="icon" href="Videos/barberIcon.png" type="image/x-icon">   
+    </head>
+    <body>
+        <audio autoplay id="jazz">     
+             <source src="Videos/jazz.mp3" type="audio/mpeg">
+             Your browser does not support audio
+        </audio> 
+            <img id="barberLogo" src="Videos/barberIcon.png" alt="Melbourne Barber Logo">
+            <div id="starting">
+            <p class="melbourneshop">2104 Sarno Road Melbourne, FL 32935</p>
+            <p class="melbourneshop">321-254-3793</p>
+            <p class="melbourneshop">Melbournebarbershopinfo@gmail.com</p>
+            </div>
+            <div id="hours">
+            <p class="melbourneshop">Monday - Friday 8:30am - 5:30pm</p>
+            <p class="melbourneshop"> Saturday 9:00am - 3:00pm</p>
+            <p class="melbourneshop">Sunday: CLOSED</p>
+            </div>
+            <p class="walkIn">Walk Ins welcome!</p>
+            <a id="book" href="https://calendly.com/melbournebarbershop" target="_blank">Book appointment</a>
+        <ul>  
+                <li id="services">Our Services</li>
+                <li id="dressing">
+                   <img src="Videos/dressing.webp">  
+                </li>
+                <li id="coloring">
+                    <img src="Videos/coloring.webp">
+                </li>
+                <li id="shaving">
+                    <img src="Videos/shaving.webp">
+                </li>
+                <li id="classic">
+                    <img src="Videos/classic.webp">
+                </li>
+                <li id="facial">
+                    <img src="Videos/facial.webp">
+                </li>
+                <li id="hairdressing">
+                    <img src="Videos/hairdressing.webp ">
+                </li>
+            </ul>
+        <div class="sidenav"> 
+            <a href="#barberLogo">Home</a> 
+            <a href="#pricingDiv">Pricing</a> 
+            <a href="#services">Our Services</a>  
+            <a href="https://www.google.com/maps/place/Melbourne+Barber+Shop/@28.1230143,-80.6558149,123m/data=!3m1!1e3!4m12!1m6!3m5!1s0x88de0f0fe094c077:0xcd040afdd4597cc5!2sMelbourne+Barber+Shop!8m2!3d28.123098!4d-80.6559319!3m4!1s0x88de0f0fe094c077:0xcd040afdd4597cc5!8m2!3d28.123098!4d-80.6559319" target="_blank">Our Address</a>
+            <a href="https://www.instagram.com/melbournebarbershop/" target="_blank">Instagram</a>  
+            <a href="http://www.facebook.com/melbournebarbershop" target="_blank">Facebook</a>
+            <button id="mute" onClick="muteAudio();">Mute Audio</button><br>   
+        </div>
+            <p id="about">ABOUT US</p> 
+            <p id="abouts">We are a full-service Barber and Beauty Salon, the only one of it’s kind in the Harbor City. We take great pride in our craft and it shows with all the satisfied clients we have. We joke with each other that we have more than 200 years of experience between all of us, so we are slightly younger than our constitution! It’s funny, but the real benefit is to our clients, because you get the best of the best. We consult and rely on each other, as professionals do. No EGOS here, just good work. Come experience us, you’ll be glad you did.</p>
+            <iframe width="660" height="382" src="https://www.youtube.com/embed/oYQmigBQ5h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-left: 30%"></iframe><br><br><br>
+            <div id="pricingDiv"> 
+            <h1>Pricing</h1>
+            <div id="mensDiv">
+                <h3>Men's</h3>
+                <ul id="mensList"> 
+                    <li>Men's Haircuts</li>
+                    <li>Seniors</li>
+                    <li>Military / Police</li>
+                    <li>Children 12 & Under</li>
+                    <li>Clean Up</li>
+                    <li>Edging</li>
+                    <li>Shampoo</li>
+                    <li>Add Color</li>
+                    <li>Razor Edge</li>
+                    <li>Mustache Service</li>
+                    <li>Beard Service</li>
+                    <li>Goatee</li>
+                    <li>Add Color</li> 
+                </ul>
+                <ul id="mensPricing">
+                    <li>$18</li>
+                    <li>$15 (M-F)</li>
+                    <li>$16 (M-F)</li>
+                    <li>$15</li>
+                    <li>$5</li>
+                    <li>$12</li>
+                    <li>$3</li>
+                    <li>$25</li>
+                    <li>$2</li>
+                    <li>$2</li>
+                    <li>$6</li>
+                    <li>$4</li>
+                    <li>$10</li>
+                </ul>
+            </div>
+            <div id="womensDiv">
+                <h3>Women's</h3>
+                <ul id="womensList">
+                    <li>Shampoo & Cut</li>
+                    <li>Shampoo, Cut, & Style</li>
+                    <li>Color, Cut & Style</li>
+                    <li>Shampoo & Style</li>
+                    <li>Highlights & Style</li>
+                    <li>Perms</li>
+                    <li>Perms with Cut & Style</li> 
+                    <li>Facials</li>
+                    <li>Eyebrows</li>
+                    <li>Upper Lip</li>
+                    <li>Chin</li>
+                    <li>Eyebrows, Upper Lip, & Chin</li> 
+                    <li>Manicures</li>
+                    <li>Pedicures</li>
+                </ul>
+                <ul id="womensPricing"> 
+                    <li>$25</li>
+                    <li>$40</li>
+                    <li>$70</li>
+                    <li>$25</li>
+                    <li>$95</li>
+                    <li>$70</li>
+                    <li>$85</li>
+                    <li>$60</li>
+                    <li>$10</li>
+                    <li>$8</li>
+                    <li>$8</li>
+                    <li>$20</li>
+                    <li>$18</li> 
+                    <li>$28</li>
+                </ul>
+            </div>
+        </div>
+            <div id="circle">
+                <p id="offers">We offer discounts to seniors, responders, military and law enforcement!</p> 
+            </div>
+            <div>
+            <video id="welcomeVideo" width="150" height="500" autoplay="autoplay" loop="loop" muted="muted">
+                <source src="Videos/welcomeVideo.mp4" type="video/mp4">
+                Your browser does not support video playback. 
+            </video>  
+            </div>
+            <div id="employment">  
+                <p id="title">EMPLOYMENT</p>
+                <p>As we expand and grow, we are always looking for new talent. To apply, contact Catherine at 321-254-3793.</p>
+            </div>
+            <script> 
+                function muteAudio() 
+                { 
+                 var button = document.getElementById("mute");
+                 if(document.getElementById('jazz').muted === false){
+                     document.getElementById('jazz').muted = true;
+                     button.innerHTML ="Audio Muted";
+                     
+                } else{
+                     document.getElementById('jazz').muted = false;
+                     button.innerHTML = "Mute Audio";
+                }
+                  }
+            </script>   
+    </body> 
+</html>
+
+

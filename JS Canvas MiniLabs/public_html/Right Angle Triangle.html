@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Right Angle Triangle</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Declaration of the canvas item. -->
+        <canvas id="canvas"></canvas>
+        <script>
+            //JavaScript that creates the item, using the lineTo() and moveTo() functions, we can create the shape and we fill it with black, which is the default value.
+             var canvas = document.getElementById("canvas");
+             var rightTriangle = canvas.getContext("2d");
+             rightTriangle.beginPath();
+             rightTriangle.moveTo(75,75);
+             rightTriangle.lineTo(10, 75);
+             rightTriangle.lineTo(10,25); 
+             rightTriangle.fill();  
+        </script>
+    </body>
+</html>

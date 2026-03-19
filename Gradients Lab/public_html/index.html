@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gradients Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS code that styles the webpage accordingly. The images are displayed on the webpage. */
+            #all{
+              background: #FFFFFF url(Images/octopus.png) no-repeat right bottom;
+              background-size: contain;
+            }
+            h3{
+                color: olive;
+            }
+            li{
+                font-size: 20px;
+                list-style-type: disc;
+            }
+            .li{
+               list-style-type: circle;  
+            }
+            footer{
+                color: white;
+                text-align: center;
+                float: bottom;
+                background: #717B32 url(footer-gradient.png) repeat-x 0px -25px;
+                clear: both;
+                transform: translate(0.6px, -16px);
+            }
+            #greenWindow{
+                border: 2px solid #CCC;
+                border-radius: 25px;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                background-color: rgba(198,207,146,0.8);
+                width: 75%;
+                margin-top: 10px;
+                height: 350px;
+                transform: translate(29%,-170%);
+            }
+            #DefaultLinear{
+                background: linear-gradient(red, yellow);
+                background: linear-gradient(red, yellow);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:180px;
+                height:175px;
+                margin-left: 10px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                text-align: center;
+                font-size: 24px;   
+                font-weight: bold;
+                float: left;
+                text-align: center;
+            }
+             #LeftLinear{
+                background: linear-gradient(to bottom right, purple, red, yellow, green);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:180px;
+                height:175px;
+                margin-left: 10px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                text-align: center;
+                font-size: 24px;   
+                font-weight: bold;
+                float: left;
+                text-align: center;
+            }
+             #PositionLinear{
+                background: linear-gradient(to bottom left, green 20%, yellow 20% 40%, green 40% 60%, yellow 60% 80%, green 80% 100%);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:180px;
+                height:175px;
+                margin-left: 10px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                text-align: center;
+                font-size: 24px;   
+                font-weight: bold;
+                float: left;
+                text-align: center;
+            }
+            #DefaultRadial{
+                background: radial-gradient(white, blue);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:180px;
+                height:175px;
+                margin-left: 10px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                text-align: center;
+                font-size: 24px;   
+                font-weight: bold;
+                float: left;
+                text-align: center;
+            }
+            #BottomRadial{
+                background: radial-gradient(ellipse at center bottom, yellow 10%, red 32%, purple 100%);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:180px;
+                height:175px;
+                margin-left: 10px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                text-align: center;
+                font-size: 24px;   
+                font-weight: bold;
+                float: left; 
+                text-align: center;
+            }
+            #PositionedRadial{
+                background: radial-gradient(ellipse at top left, yellow 20%, red, green, purple 75%);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.6);
+                width:180px;
+                height:175px;
+                margin-left: 10px;
+                border-radius: 25px;
+                border: 2px solid #CCCCCC;
+                text-align: center;
+                font-size: 24px;   
+                font-weight: bold;
+                float: left; 
+                text-align: center;  
+            }
+        </style>
+    </head>
+    <body>
+        <!--HTML code that displays on the screen. Accessing our CSS code, the items are styled according to the style codes. -->
+        <p>Creatures that Live Around and Under the Ocean are...</p>
+        <h1>Aquamaniacs</h1>
+        <div id="all">
+        <ul>
+            <li><a href="#">Home</a>
+            <li><a href="#">Big Critters</a>
+               <ul>
+                   <li class="li"><a href="#">Whales</a></li>
+                   <li class="li"><a href="#">Dolphins</a></li>
+                   <li class="li"><a href="#">Sharks</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Oddballs</a>
+              <ul>
+                  <li class="li"><a href="#">Emperor Penguin</a></li>
+                  <li class="li"><a href="#">Lobster</a></li>
+                  <li class="li"><a href="#">Lionfish</a></li>
+                  <li class="li"><a href="#">Cuttlefish</a></li>
+                  <li class="li"><a href="#">Seahorse</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Multimedia</a>
+              <ul>
+                  <li class="li"><a href="#">Groovy Fish</a></li>
+                  <li class="li"><a href="#">Watery Pics</a></li>
+                  <li class="li"><a href="#">Aquarium</a></li>
+                  <li class="li"><a href="#">Sound Bites</a></li>
+                  <li class="li"><a href="#">Octopus Videos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Animations</a>
+              <ul>
+                  <li class="li"><a href="#">Octopus Animations</a></li> 
+                  <li class="li"><a href="#">Otters</a></li>
+                  <li class="li"><a href="#">Funny Fish 1</a></li>
+                  <li class="li"><a href="#">Funny Fish 2</a></li>
+              </ul>
+            </li>
+        </ul>
+        </div>
+        <footer>&copy 2013. CompuScholar, Inc. All Rights Reserved</footer>
+        <div id="greenWindow">
+            <h1>Crazy Environments</h1>
+            <h3>Swimming with colors</h3>
+            <div id ="DefaultLinear">
+                Default linear
+                2 colors
+                <img src="Images/fish.png" alt="fish">
+            </div>
+            <div id="LeftLinear">
+                Top Left linear with
+                4 colors
+                <img src="Images/fish.png" alt="fish">
+            </div>
+            <div id="PositionLinear">
+                 Position Linear with
+                 overlapping color: stops
+                <img src="Images/fish.png" alt="fish">
+            </div>
+            <div id="DefaultRadial">
+                Default Radial with
+                two colors
+                <img src="Images/fish.png" alt="fish">
+            </div>
+            <div id="BottomRadial">
+                Bottom Radial with 
+                3 colors
+                <img src="Images/fish.png" alt="fish">
+            </div>
+            <div id="PositionedRadial">
+                Positioned Radial with 
+                5 color stops 
+                <img src="Images/fish.png" alt="fish">
+            </div>
+        </div>
+    </body>
+</html>

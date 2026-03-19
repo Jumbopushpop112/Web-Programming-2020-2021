@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head> 
+        <title>Lab 1 HTML Forms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS code that center aligns the items. The label items are displayed to the left 5 pixels. The elements with the id container will receive according values. */
+            #container{
+                /*Center Display*/
+                display: grid;
+                grid-template-columns:5% 20%; 
+                grid-column-gap: 5px;
+                grid-row-gap: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: left; /*Justify anything is along the x-axis */
+                border: solid 1px graytext;
+                padding-bottom: 10px;
+                align-items: center;
+            }   
+            label{ 
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--HTML code that creates the form. Using the tags, we can create the form. Such as <section>, <form> etc. -->
+        <h1>Contact Us</h1>
+    <form action="someFileName.aspx" method="get"> 
+        <fieldset>
+        <legend>Your message</legend> 
+            <section id="container">
+                <label for="emailUsers">To</label> 
+                <input id="emailUsers" type="text" name="email" value="Enter the email of the user you are sending to" size="15" maxlength="15" required placeholder="Enter Email">
+
+                <label for="email">Your email</label>
+                <input id="email" type="text" name="email" value="Enter your email" size="15" maxlength="15" required placeholder="Enter Email">
+                
+                <label>Messages</label>
+                <textarea name="txtComments" rows="20" cols="50" placeholder="Enter your message here!"></textarea>
+                    
+            </section> 
+        </fieldset>  
+        
+   </form>
+     
+    <form action="someFileName.aspx" method="get">
+        <!-- action attribute is the URL of the page on the web server that
+        handles the request. The method attribute sets which of the two ways
+        to send the form data to the server. Method attribute can take 2 values: "get" and "post" get is used
+        when you want to send data to the server that is not sensitive.
+        Post method is used to send sensitive data o the server.
+        The form element and all form controls will take on the name and ID
+        attribute as well as the 2 attributes above. The form will have a name and an
+        id, but not a value. Name attribute is used by the server side script, id
+        attribute is used for styling. Get method is a default method.-->
+        <fieldset>
+            <legend>How you found us</legend>
+            <section>
+             <label>How did you hear of us</label>
+            <select>
+                <option value="google">Chrome</option>
+                <option value="friend">Friend told me</option>
+                <option value="ad">Your ad showed on my site</option>
+                <option value="call">I got a phone call from the owner</option>
+                <option value="secret">I must not say how I heard of it</option>
+                <option value="other">Other</option>
+              
+            </select>
+            </section>
+            
+            <section> 
+             Newsletter
+             <input type="checkbox" id="newsletter" name="letter" value="Yes"> 
+             <label for="newsletter"><b>Ensure this box is checked if you would like to receive email updates</b></label><br>
+            </section>
+        </fieldset>
+        <input type="submit" value="Send Message" name="btnSubmit">
+        
+    </form>
+    </body>
+</html>
